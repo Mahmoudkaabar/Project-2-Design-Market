@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Market - Premium Design Marketplace</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">Design Market</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="designs.html" class="nav-link">Designs</a>
+                    <a href="designers.html" class="nav-link">Designers</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+
+                <!-- Search & Auth (Desktop) -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search for designs..." class="search-input">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="auth-buttons">
+                        <a href="login.html" class="btn btn-outline">Log in</a>
+                        <a href="signup.html" class="btn btn-primary">Sign up</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-button">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Search for designs..." class="search-input">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link active">Home</a>
+                    <a href="designs.html" class="mobile-nav-link">Designs</a>
+                    <a href="designers.html" class="mobile-nav-link">Designers</a>
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                </nav>
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn btn-outline btn-block">Log in</a>
+                    <a href="signup.html" class="btn btn-primary btn-block">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover exceptional designs for your brand</h1>
+                <p class="hero-subtitle">Connect with professional designers and find the perfect designs to elevate your brand identity.</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Search for designs..." class="hero-search-input">
+                    <button class="hero-search-button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero-buttons">
+                    <a href="designs.html" class="btn btn-light">Browse designs</a>
+                    <a href="designers.html" class="btn btn-outline-light">Find designers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore categories</h2>
+                <p class="section-subtitle">Find the perfect design in our diverse categories.</p>
+            </div>
+            <div class="categories-grid">
+                <!-- Category 1: Brand Identity -->
+                <a href="designs.html?category=brand-identity" class="category-card">
+                    <span class="category-icon">🎨</span>
+                    <h3 class="category-title">Brand Identity</h3>
+                </a>
+                <!-- Category 2: Web Design -->
+                <a href="designs.html?category=web-design" class="category-card">
+                    <span class="category-icon">🖥️</span>
+                    <h3 class="category-title">Web Design</h3>
+                </a>
+                <!-- Category 3: Packaging -->
+                <a href="designs.html?category=packaging" class="category-card">
+                    <span class="category-icon">📦</span>
+                    <h3 class="category-title">Packaging</h3>
+                </a>
+                <!-- Category 4: UI/UX Design -->
+                <a href="designs.html?category=ui-ux" class="category-card">
+                    <span class="category-icon">📱</span>
+                    <h3 class="category-title">UI/UX Design</h3>
+                </a>
+                <!-- Category 5: Illustration -->
+                <a href="designs.html?category=illustration" class="category-card">
+                    <span class="category-icon">✏️</span>
+                    <h3 class="category-title">Illustration</h3>
+                </a>
+                <!-- Category 6: Print Design -->
+                <a href="designs.html?category=print" class="category-card">
+                    <span class="category-icon">🖨️</span>
+                    <h3 class="category-title">Print Design</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Designs -->
+    <section class="featured-designs">
+        <div class="container">
+            <div class="section-header-with-link">
+                <div>
+                    <h2 class="section-title">Featured Designs</h2>
+                    <p class="section-subtitle">Carefully selected designs for quality and excellence</p>
+                </div>
+                <a href="designs.html" class="view-all-link">
+                    View all
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="view-all-icon">
+                        <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="designs-grid">
+                <!-- Design Card 1 -->
+                <div class="design-card">
+                    <a href="design-detail.html?id=1" class="design-image">
+                        <img src="https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Minimalist Brand Identity Package">
+                    </a>
+                    <div class="design-info">
+                        <h3 class="design-title">
+                            <a href="design-detail.html?id=1">Minimalist Brand Identity Package</a>
+                        </h3>
+                        <p class="design-designer">By <a href="designer.html?id=1">Sarah Wilson</a></p>
+                        <div class="design-meta">
+                            <p class="design-price">$1200</p>
+                            <div class="design-rating">
+                                <svg class="rating-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>4.8 (24)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design Card 2 -->
+                <div class="design-card">
+                    <a href="design-detail.html?id=2" class="design-image">
+                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="E-commerce Website UI Design">
+                    </a>
+                    <div class="design-info">
+                        <h3 class="design-title">
+                            <a href="design-detail.html?id=2">E-commerce Website UI Design</a>
+                        </h3>
+                        <p class="design-designer">By <a href="designer.html?id=2">Michael Chen</a></p>
+                        <div class="design-meta">
+                            <p class="design-price">$1800</p>
+                            <div class="design-rating">
+                                <svg class="rating-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>4.9 (32)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design Card 3 -->
+                <div class="design-card">
+                    <a href="design-detail.html?id=3" class="design-image">
+                        <img src="https://images.pexels.com/photos/4318047/pexels-photo-4318047.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Premium Product Packaging Design">
+                    </a>
+                    <div class="design-info">
+                        <h3 class="design-title">
+                            <a href="design-detail.html?id=3">Premium Product Packaging Design</a>
+                        </h3>
+                        <p class="design-designer">By <a href="designer.html?id=1">Sarah Wilson</a></p>
+                        <div class="design-meta">
+                            <p class="design-price">$950</p>
+                            <div class="design-rating">
+                                <svg class="rating-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>4.7 (18)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design Card 4 -->
+                <div class="design-card">
+                    <a href="design-detail.html?id=4" class="design-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mobile App UI Kit">
+                    </a>
+                    <div class="design-info">
+                        <h3 class="design-title">
+                            <a href="design-detail.html?id=4">Mobile App UI Kit</a>
+                        </h3>
+                        <p class="design-designer">By <a href="designer.html?id=2">Michael Chen</a></p>
+                        <div class="design-meta">
+                            <p class="design-price">$1500</p>
+                            <div class="design-rating">
+                                <svg class="rating-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span>4.6 (41)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Trusted by businesses worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"The brand identity package I purchased completely transformed my business. The designer was professional, communicative, and delivered beyond my expectations."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop&crop=faces" alt="Robert Chen" class="testimonial-avatar">
+                        <div>
+                            <p class="testimonial-name">Robert Chen</p>
+                            <p class="testimonial-title">CEO, TechInnovate</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"The e-commerce website design was exactly what our brand needed. The designer perfectly understood our vision, and it was a pleasure working with him throughout the process."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop&crop=faces" alt="Emily Johnson" class="testimonial-avatar">
+                        <div>
+                            <p class="testimonial-name">Emily Johnson</p>
+                            <p class="testimonial-title">Founder, StyleHarbor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="testimonial-star" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"I've worked with many designers on this platform, and the quality and professionalism have consistently been excellent. I highly recommend this marketplace for any business."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop&crop=faces" alt="David Wilson" class="testimonial-avatar">
+                        <div>
+                            <p class="testimonial-name">David Wilson</p>
+                            <p class="testimonial-title">Marketing Director, GlobalBrand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Elevate Your Brand?</h2>
+                <p class="cta-subtitle">Join thousands of satisfied clients who found their perfect design match.</p>
+                <div class="cta-buttons">
+                    <a href="designs.html" class="btn btn-light">Explore Designs</a>
+                    <a href="signup.html" class="btn btn-outline-light">Create an Account Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo and Description -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Design Market</span>
+                    </a>
+                    <p class="footer-description">
+                        The leading marketplace for high-quality design work. Connect with professional designers and elevate your brand.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.796-1.56 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3.85c2.012 0 2.27.007 3.071.045.79.036 1.183.17 1.46.282.363.141.633.323.912.602.278.28.459.549.601.912.112.277.246.67.281 1.46.039.802.046 1.059.046 3.07 0 2.012-.007 2.27-.046 3.072-.035.79-.169 1.183-.28 1.46-.142.362-.324.633-.602.912-.28.278-.549.459-.911.601-.278.112-.672.246-1.461.281-.802.039-1.06.046-3.071.046-2.014 0-2.271-.007-3.073-.046-.789-.035-1.183-.169-1.46-.281-.362-.142-.632-.323-.912-.601-.278-.28-.459-.55-.601-.912-.112-.277-.246-.67-.281-1.46-.039-.802-.045-1.06-.045-3.072 0-2.011.006-2.269.045-3.071.035-.79.17-1.183.281-1.461.142-.362.323-.632.601-.911.28-.279.55-.459.912-.601.277-.112.671-.246 1.46-.282.802-.038 1.059-.045 3.073-.045z"/>
+                                <path d="M12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-7.622a4.622 4.622 0 1 0 0 9.244 4.622 4.622 0 0 0 0-9.244zm5.884-.182a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.003 5.884L10 11.882l7.997-5.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 6-8-6V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="designs.html" class="footer-link">Designs</a></li>
+                        <li><a href="designers.html" class="footer-link">Designers</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Categories</h3>
+                    <ul class="footer-list">
+                        <li><a href="designs.html?category=brand-identity" class="footer-link">Brand Identity</a></li>
+                        <li><a href="designs.html?category=web-design" class="footer-link">Web Design</a></li>
+                        <li><a href="designs.html?category=packaging" class="footer-link">Packaging</a></li>
+                        <li><a href="designs.html?category=ui-ux" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="designs.html?category=illustration" class="footer-link">Illustrations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help & Support -->
+                <div class="footer-links">
+                    <h3 class="footer-heading">Help & Support</h3>
+                    <ul class="footer-list">
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="support.html" class="footer-link">Support Center</a></li>
+                        <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="become-designer.html" class="footer-link">Become a Designer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Design Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
